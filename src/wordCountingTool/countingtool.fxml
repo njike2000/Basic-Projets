@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wordCountingTool.Count">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="573.0" prefWidth="640.0">
+         <children>
+            <Label layoutX="65.0" layoutY="126.0" text="Type your Words">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="words" alignment="TOP_LEFT" layoutX="222.0" layoutY="95.0" prefHeight="83.0" prefWidth="293.0" />
+            <Button fx:id="count" layoutX="222.0" layoutY="248.0" mnemonicParsing="false" onAction="#countWords" prefHeight="31.0" prefWidth="293.0" text="Count Your Words" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana Bold" size="22.0" />
+               </font>
+            </Button>
+            <TextField fx:id="total" layoutX="218.0" layoutY="369.0" prefHeight="31.0" prefWidth="155.0" />
+            <Label layoutX="76.0" layoutY="374.0" text="Total words">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="clear" layoutX="218.0" layoutY="435.0" mnemonicParsing="false" onAction="#clearText" prefHeight="45.0" prefWidth="92.0" text="Clear">
+               <font>
+                  <Font name="Verdana Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" layoutX="423.0" layoutY="435.0" mnemonicParsing="false" onAction="#programmeExit" prefHeight="45.0" prefWidth="92.0" text="Exit">
+               <font>
+                  <Font name="Verdana Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="186.0" layoutY="37.0" prefHeight="21.0" prefWidth="269.0" text="Word Count Tool" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
