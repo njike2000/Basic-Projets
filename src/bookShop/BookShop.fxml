@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<fx:root prefHeight="673.0" prefWidth="1024.0" type="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="bookShop.BookController">
+   <children>
+      <AnchorPane layoutX="200.0" layoutY="52.0" prefHeight="131.0" prefWidth="521.0" />
+      <Label layoutX="440.0" layoutY="82.0" prefHeight="54.0" prefWidth="158.0" text="BOOK SHOP">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <TitledPane layoutX="41.0" layoutY="173.0" text="Registration">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="426.0">
+               <children>
+                  <Label layoutX="11.0" layoutY="24.0" prefHeight="33.0" prefWidth="92.0" text="Book Name">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="73.0" prefHeight="33.0" prefWidth="91.0" text="Edition">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="116.0" prefHeight="33.0" prefWidth="91.0" text="Price">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="namefield" layoutX="203.0" layoutY="28.0" />
+                  <TextField fx:id="editionfield" layoutX="203.0" layoutY="77.0" />
+                  <TextField fx:id="pricefield" layoutX="203.0" layoutY="120.0" />
+               </children>
+            </Pane>
+         </content>
+      </TitledPane>
+      <Accordion layoutX="522.0" layoutY="173.0" />
+      <Button fx:id="save" layoutX="41.0" layoutY="419.0" mnemonicParsing="false" onAction="#SaveMeth" prefHeight="40.0" prefWidth="135.0" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="exit" layoutX="188.0" layoutY="419.0" mnemonicParsing="false" onAction="#ExitMeth" prefHeight="40.0" prefWidth="135.0" text="Exit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="clear" layoutX="334.0" layoutY="419.0" mnemonicParsing="false" onAction="#ClearMeth" prefHeight="40.0" prefWidth="135.0" text="Clear">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="scroll" layoutX="558.0" layoutY="173.0" prefHeight="285.0" prefWidth="436.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+      <TitledPane layoutX="41.0" layoutY="481.0" prefHeight="95.0" prefWidth="428.0" text="Search">
+         <content>
+            <Pane prefHeight="236.0" prefWidth="421.0">
+               <children>
+                  <Label layoutX="22.0" layoutY="26.0" prefHeight="33.0" prefWidth="91.0" text="Book ID">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idfield" layoutX="213.0" layoutY="21.0" onDragDetected="#KeyReleased" />
+               </children>
+            </Pane>
+         </content>
+      </TitledPane>
+      <Button fx:id="delete" layoutX="788.0" layoutY="505.0" mnemonicParsing="false" onAction="#DeleteMeth" prefHeight="64.0" prefWidth="144.0" text="Delete">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="update" layoutX="598.0" layoutY="505.0" mnemonicParsing="false" onAction="#UpdateMeth" prefHeight="64.0" prefWidth="144.0" text="Update">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</fx:root>
